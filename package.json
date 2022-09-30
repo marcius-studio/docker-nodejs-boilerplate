@@ -1,0 +1,35 @@
+{
+  "name": "docker-nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node .",
+    "build": "webpack --progress --colors",
+    "start": "dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcius-studio/docker-nodejs-boilerplate.git"
+  },
+  "author": "Marcius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcius-studio/docker-nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/marcius-studio/docker-nodejs-boilerplate#readme",
+  "dependencies": {
+    "fastify": "3.24.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/node": "7.8.7",
+    "@babel/plugin-transform-runtime": "7.10.0",
+    "@babel/preset-env": "7.12.11",
+    "@babel/runtime": "7.10.0",
+    "babel-loader": "8.1.0",
+    "nodemon": "2.0.3",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10"
+  }
+}
