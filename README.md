@@ -25,17 +25,14 @@ $ npm run start # launch app for docker
 
 ##### Local
 
-# container for Ubuntu + add tag "latest"
+# container for Ubuntu + add tag "latest" / same command for update container
 $ docker buildx build --platform=linux/amd64 . -t <docker_username>/docker-nodejs-boilerplate 
 
-# M1 build for local testing!
+# container for M1
 $ docker build . -t <docker_username>/docker-nodejs-boilerplate 
 
 # run local
 $ docker run -p 4000:4000 <docker_username>/docker-nodejs-boilerplate
-
-# update container
-$ docker buildx build --platform=linux/amd64 . -t <docker_username>/docker-nodejs-boilerplate # update
 
 ##### Server
 
