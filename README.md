@@ -41,6 +41,11 @@ $ docker push <docker_username>/docker-nodejs-boilerplate # pull latest version
 $ docker run --restart always -p 4000:4000 <docker_username>/docker-nodejs-boilerplate
 
 # commands for server
+$ # INSTALL DOCKER
+$ docker login -u "string" -p "string"
+$ docker pull <docker_username>/docker-nodejs-boilerplat # pull latest version
+
+$ docker logout # logout
 $ docker ps -a # Docker container
 $ docker stop container_id # turn off your Docker container
 ```
