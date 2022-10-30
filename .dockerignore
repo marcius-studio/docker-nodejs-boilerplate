@@ -1,5 +1,5 @@
 node_modules
-npm-debug*
+npm-debug.*
 
 yarn-lock.json
 package-lock.json

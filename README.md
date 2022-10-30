@@ -3,7 +3,7 @@
 ## How to start
 
 1. [Download Docker Desktop + Sign Up](https://www.docker.com/) 
-2. Create container: `$ docker buildx build --platform=linux/amd64 . -t <docker_username>/docker-nodejs-boilerplate `
+2. Create container: `$ docker buildx build --platform=linux/amd64 . -t <docker_username>/docker-nodejs-boilerplate`
 3. From "Docker Desktop" push container to cloud
 4. [Install Docker to Ubuntu Server](https://docs.docker.com/engine/install/ubuntu/)
 5. Download container: `$ docker push <docker_username>/docker-nodejs-boilerplate`
@@ -28,7 +28,7 @@ $ npm run start # launch app for docker
 # container for Ubuntu + add tag "latest" / same command for update container
 $ docker buildx build --platform=linux/amd64 . -t <docker_username>/docker-nodejs-boilerplate 
 
-# container for M1
+# container for ARM (works ONLY on M1)
 $ docker build . -t <docker_username>/docker-nodejs-boilerplate 
 
 # run local

@@ -15,4 +15,4 @@ app.get('/', (request, reply) => {
     reply.send({ status: 'ok' })
 })
 
-app.listen({ port: PORT, host: HOST }).then(() => console.log(`http://${HOST}:${PORT}`))
+app.listen({ port: PORT, host: HOST }).then(() => console.log(`http://${HOST}:${PORT},`, process.env.NODE_ENV))
